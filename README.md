@@ -42,8 +42,22 @@ Accepts a URL to scrape. Returns a Promise with a result:
 ```js
 {
 success: boolean;
-data?: any;
+data?: ScrapedData;
 error?: string;
+}
+```
+
+**ScrapedData**: The data returned from the Norns API.
+
+```ts
+interface ScrapedData {
+  markdown: string;
+  metadata: {
+    title: string;
+    description: string;
+    html: string;
+  };
+  scrape_id: string;
 }
 ```
 
