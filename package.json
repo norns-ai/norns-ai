@@ -1,0 +1,33 @@
+{
+  "name": "norns-ai",
+  "version": "0.1.1",
+  "description": "Norns AI Client Library",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./types": {
+      "import": "./dist/types/index.js",
+      "require": "./dist/types/index.cjs.js",
+      "types": "./dist/types/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  },
+  "files": [
+    "dist"
+  ],
+  "author": {
+    "name": "Matheus Mello",
+    "email": "matheus@norns.ai",
+    "url": "https://www.norns.ai"
+  }
+}
